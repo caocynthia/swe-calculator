@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696360023371" clover="3.2.0">
-  <project timestamp="1696360023371" name="All files">
-    <metrics statements="104" coveredstatements="94" conditionals="11" coveredconditionals="6" methods="20" coveredmethods="20" elements="135" coveredelements="120" complexity="0" loc="104" ncloc="104" packages="4" files="8" classes="8"/>
+<coverage generated="1697089814167" clover="3.2.0">
+  <project timestamp="1697089814168" name="All files">
+    <metrics statements="137" coveredstatements="102" conditionals="15" coveredconditionals="12" methods="49" coveredmethods="37" elements="201" coveredelements="151" complexity="0" loc="137" ncloc="137" packages="4" files="12" classes="12"/>
     <package name="src">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <file name="index.spec.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/index.spec.ts">
+      <file name="index.spec.ts" path="/Users/cc/swe-calculator/src/index.spec.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="index.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/index.ts">
+      <file name="index.ts" path="/Users/cc/swe-calculator/src/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.enums">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="action-keys.enum.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/enums/action-keys.enum.ts">
+      <file name="action-keys.enum.ts" path="/Users/cc/swe-calculator/src/enums/action-keys.enum.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
-      <file name="numeric-keys.enum.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/enums/numeric-keys.enum.ts">
+      <file name="numeric-keys.enum.ts" path="/Users/cc/swe-calculator/src/enums/numeric-keys.enum.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
-      <file name="operator-keys.enum.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/enums/operator-keys.enum.ts">
+      <file name="operator-keys.enum.ts" path="/Users/cc/swe-calculator/src/enums/operator-keys.enum.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.interfaces">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="calculator-model.interface.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/interfaces/calculator-model.interface.ts">
+      <file name="calculator-model.interface.ts" path="/Users/cc/swe-calculator/src/interfaces/calculator-model.interface.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="calculator.state.model.ts" path="/Users/cc/swe-calculator/src/interfaces/calculator.state.model.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.models">
-      <metrics statements="100" coveredstatements="90" conditionals="11" coveredconditionals="6" methods="17" coveredmethods="17"/>
-      <file name="calculator.model.spec.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/models/calculator.model.spec.ts">
-        <metrics statements="62" coveredstatements="62" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12"/>
+      <metrics statements="133" coveredstatements="98" conditionals="15" coveredconditionals="12" methods="46" coveredmethods="34"/>
+      <file name="calculator.model.spec.ts" path="/Users/cc/swe-calculator/src/models/calculator.model.spec.ts">
+        <metrics statements="62" coveredstatements="46" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12"/>
         <line num="9" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="10" type="stmt"/>
@@ -63,8 +66,8 @@
         <line num="66" count="1" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
         <line num="75" count="1" type="stmt"/>
         <line num="77" count="1" type="stmt"/>
         <line num="78" count="1" type="stmt"/>
@@ -72,74 +75,116 @@
         <line num="80" count="1" type="stmt"/>
         <line num="81" count="1" type="stmt"/>
         <line num="82" count="1" type="stmt"/>
-        <line num="83" count="1" type="stmt"/>
-        <line num="85" count="1" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
         <line num="89" count="1" type="stmt"/>
         <line num="91" count="1" type="stmt"/>
         <line num="92" count="1" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="94" count="1" type="stmt"/>
-        <line num="95" count="1" type="stmt"/>
-        <line num="97" count="1" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
         <line num="101" count="1" type="stmt"/>
         <line num="103" count="1" type="stmt"/>
         <line num="104" count="1" type="stmt"/>
         <line num="105" count="1" type="stmt"/>
         <line num="106" count="1" type="stmt"/>
-        <line num="107" count="1" type="stmt"/>
-        <line num="108" count="1" type="stmt"/>
-        <line num="109" count="1" type="stmt"/>
-        <line num="110" count="1" type="stmt"/>
-        <line num="112" count="1" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
         <line num="116" count="1" type="stmt"/>
         <line num="118" count="1" type="stmt"/>
         <line num="119" count="1" type="stmt"/>
         <line num="120" count="1" type="stmt"/>
         <line num="121" count="1" type="stmt"/>
-        <line num="122" count="1" type="stmt"/>
-        <line num="123" count="1" type="stmt"/>
-        <line num="125" count="1" type="stmt"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="125" count="0" type="stmt"/>
       </file>
-      <file name="calculator.model.ts" path="/Users/cc/Downloads/(optional) week-5-design-patterns-starter/src/models/calculator.model.ts">
-        <metrics statements="38" coveredstatements="28" conditionals="11" coveredconditionals="6" methods="5" coveredmethods="5"/>
-        <line num="9" count="10" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="11" count="10" type="stmt"/>
-        <line num="14" count="20" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-        <line num="24" count="4" type="cond" truecount="1" falsecount="3"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
+      <file name="calculator.model.states.first.ts" path="/Users/cc/swe-calculator/src/models/calculator.model.states.first.ts">
+        <metrics statements="13" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="7"/>
+        <line num="13" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="11" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+      </file>
+      <file name="calculator.model.states.second.ts" path="/Users/cc/swe-calculator/src/models/calculator.model.states.second.ts">
+        <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="5"/>
+        <line num="13" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+      </file>
+      <file name="calculator.model.states.third.ts" path="/Users/cc/swe-calculator/src/models/calculator.model.states.third.ts">
+        <metrics statements="9" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="4"/>
+        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="35" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="36" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+      </file>
+      <file name="calculator.model.ts" path="/Users/cc/swe-calculator/src/models/calculator.model.ts">
+        <metrics statements="36" coveredstatements="27" conditionals="9" coveredconditionals="6" methods="10" coveredmethods="6"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="27" count="12" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="39" count="4" type="stmt"/>
-        <line num="40" count="4" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="47" count="9" type="stmt"/>
-        <line num="52" count="4" type="stmt"/>
-        <line num="53" count="4" type="stmt"/>
-        <line num="54" count="4" type="stmt"/>
-        <line num="55" count="4" type="stmt"/>
-        <line num="57" count="4" type="cond" truecount="4" falsecount="1"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="53" count="16" type="stmt"/>
+        <line num="54" count="16" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
+        <line num="59" count="6" type="cond" truecount="5" falsecount="0"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
         <line num="65" count="1" type="stmt"/>
         <line num="66" count="1" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
-        <line num="73" count="4" type="stmt"/>
-        <line num="76" count="4" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="70" count="3" type="stmt"/>
+        <line num="71" count="3" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="78" count="2" type="cond" truecount="1" falsecount="3"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
       </file>
     </package>
   </project>

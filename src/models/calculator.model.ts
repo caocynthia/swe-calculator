@@ -12,6 +12,7 @@ export class CalculatorModel implements ICalculatorModel {
   private _buffer: string = '';
 
   //store first operand, second operand, etc.
+  public currentOperand:number = 0;
   public firstOperand:number = 0;
   public secondOperand:number = 0;
   public thirdOperand:number = 0;
@@ -29,18 +30,48 @@ export class CalculatorModel implements ICalculatorModel {
   public changeState(state: ICalculatorState) : void {
     this.state = state;
     this.display();
+    this.currentAns = this.state.getCurrentAns();
   }
 
-  // public getAns(): number {
-  //   throw new Error('Method not implemented.');
-  // }
+  public enterPlus() : void {
+    this.state.enterPlus(this);
+  }
+
+  public enterMinus() : void {
+    this.state.enterMinus(this);
+  }
+
+  public enterMult() : void {
+    this.state.enterMult(this);
+  }
+
+  public enterDiv() : void {
+    this.state.enterDiv(this);
+  }
 
   public pressNumericKey(key: NumericKeys): void {
     this._buffer += key;
+    this.currentOperand = Number(this._buffer);
   }
 
   public pressOperatorKey(key: OperatorKeys): void {
     this._buffer += key;
+    switch (key) {
+      case OperatorKeys.PLUS:
+        this.state.enterPlus(this);
+        console.log(this.firstOperand);
+        break;
+      case OperatorKeys.MINUS:
+        this.state.enterMinus(this);
+        break;
+      case OperatorKeys.MULT:
+        this.state.enterMult(this);
+      case OperatorKeys.DIV:
+        console.log(this.firstOperand);
+        this.state.enterDiv(this);
+      default:
+        throw new Error('Invalid Action');
+    }
   }
 
   public pressActionKey(key: ActionKeys): void {
@@ -52,7 +83,7 @@ export class CalculatorModel implements ICalculatorModel {
         this._buffer += '.';
         break;
       case ActionKeys.EQUALS:
-        this._buffer = this.finalAnswer.toString();
+        this._buffer = this.currentAns.toString();
       default:
         throw new Error('Invalid Action');
     }

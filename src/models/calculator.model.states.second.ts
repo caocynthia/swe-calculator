@@ -26,26 +26,22 @@ export class EnteringSecondOperand implements ICalculatorState {
 
     public enterPlus(c: CalculatorModel): void {
         c.changeState(EnteringFirstOperand.instance(c))
-        this.currentAns = Number(c.firstOperand) + Number(c.secondOperand);
-        c.currentAns = this.currentAns.toString();
+        c.currentAns = c.firstOperand + c.secondOperand;
     }
 
     public enterMinus(c: CalculatorModel): void {
         c.changeState(EnteringFirstOperand.instance(c));
-        this.currentAns = Number(c.firstOperand) - Number(c.secondOperand);
-        c.currentAns = this.currentAns.toString();
+        c.currentAns = c.firstOperand - c.secondOperand;
     }
 
     public enterMult(c: CalculatorModel): void {
         c.changeState(EnteringThirdOperand.instance(c));
-        this.currentAns = Number(c.firstOperand) * Number(c.secondOperand);
-        c.currentAns = this.currentAns.toString();
+        c.currentAns = c.firstOperand * c.secondOperand;
     }
 
     public enterDiv(c: CalculatorModel): void {
         c.changeState(EnteringThirdOperand.instance(c));
-        this.currentAns = Number(c.firstOperand) / Number(c.secondOperand);
-        c.currentAns = this.currentAns.toString();
+        c.currentAns = c.firstOperand / c.secondOperand;
     }
 
     // public enteringFirstOperand(c: ICalculatorModel): void {

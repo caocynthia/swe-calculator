@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/interfaces/calculator-model.interface.ts</title>
+    <title>Code coverage report for src/interfaces/calculator.state.model.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/interfaces</a> calculator-model.interface.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/interfaces</a> calculator.state.model.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -109,30 +109,30 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-import { ActionKeys } from '../enums/action-keys.enum';
-import { NumericKeys } from '../enums/numeric-keys.enum';
-import { OperatorKeys } from '../enums/operator-keys.enum';
-import { ICalculatorState } from './calculator.state.model';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CalculatorModel } from "../models/calculator.model";
+import { ICalculatorModel } from "./calculator-model.interface";
 &nbsp;
-export interface ICalculatorModel{
-  // numeric key pressed &lt;0, 1, 2, 3, 4, 5, 6, 7, 8, 9&gt;
-  pressNumericKey(key: NumericKeys): void;
+/**
+ * Represents the state of the calculator
+ */
+export interface ICalculatorState {
+    // enteringFirstOperand(c:ICalculatorModel): void;
+    
+    // enteringSecondOperand(c: ICalculatorModel): void;
+    
+    // enteringThirdOperand(c: ICalculatorModel): void;
 &nbsp;
-  // operator key pressed &lt;+, -, *, /&gt;
-  pressOperatorKey(key: OperatorKeys): void;
+    enterPlus(c: CalculatorModel): void;
+    enterMinus(c: CalculatorModel): void;
+    enterMult(c: CalculatorModel): void;
+    enterDiv(c: CalculatorModel): void;
 &nbsp;
-  // action key pressed &lt;C, =, .&gt;
-  pressActionKey(key: ActionKeys): void;
+    // enterNumber(c: CalculatorModel): void;
 &nbsp;
-  // changes the state of the calculator
-  changeState(state: ICalculatorState): void;
+    // enterOperator(c: ICalculatorModel): void;
 &nbsp;
-  // returns the contents of the calculator's display
-  display(): string;
-&nbsp;
-}
-&nbsp;</pre></td></tr></table></pre>
+    getCurrentAns(): number;
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

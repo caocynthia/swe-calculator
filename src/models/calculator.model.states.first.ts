@@ -30,7 +30,7 @@ export class EnteringFirstOperand implements ICalculatorState {
 
     public enterPlus(c: CalculatorModel): void {
         c.changeState(EnteringSecondOperand.instance(c));
-        this.currentAns = c.firstOperand;
+        c.firstOperand = c.currentOperand;
     }
     public enterMinus(c: CalculatorModel): void {
         c.changeState(EnteringSecondOperand.instance(c));
