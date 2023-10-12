@@ -2,6 +2,7 @@ import { ICalculatorModel } from "../interfaces/calculator-model.interface";
 import { ICalculatorState } from "../interfaces/calculator.state.model";
 import { CalculatorModel } from "./calculator.model";
 import { EnteringFirstOperand } from "./calculator.model.states.first";
+import { EnteringSecondOperand } from "./calculator.model.states.second";
 
 export class EnteringThirdOperand implements ICalculatorState {
     private constructor(){}
@@ -37,20 +38,10 @@ export class EnteringThirdOperand implements ICalculatorState {
     }
 
     public enterMult(c: CalculatorModel): void {
-        c.changeState(EnteringFirstOperand.instance(c));
+        c.changeState(EnteringSecondOperand.instance(c));
     }
 
     public enterDiv(c: CalculatorModel): void {
-        c.changeState(EnteringFirstOperand.instance(c));
+        c.changeState(EnteringSecondOperand.instance(c));
     }
-
-    // public enteringFirstOperand(c: ICalculatorModel): void {
-    //     throw new Error("Method not implemented.");
-    // }
-    // public enteringSecondOperand(c: ICalculatorModel): void {
-    //     throw new Error("Method not implemented.");
-    // }
-    // public enteringThirdOperand(c: ICalculatorModel): void {
-    //     throw new Error("Method not implemented.");
-    // }
 }

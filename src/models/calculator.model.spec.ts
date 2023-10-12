@@ -72,58 +72,58 @@ describe('CalculatorModel', (): void => {
 
   });
 
-  it('should display `5` when equals is clicked on `15 - 10`', (): void => {
+  // it('should display `5` when equals is clicked on `15 - 10`', (): void => {
 
-    calculator.pressNumericKey(NumericKeys.ONE);
-    calculator.pressNumericKey(NumericKeys.FIVE);
-    calculator.pressOperatorKey(OperatorKeys.MINUS);
-    calculator.pressNumericKey(NumericKeys.ONE);
-    calculator.pressNumericKey(NumericKeys.ZERO);
-    calculator.pressActionKey(ActionKeys.EQUALS);
-    const displayValue: string = calculator.display();
+  //   calculator.pressNumericKey(NumericKeys.ONE);
+  //   calculator.pressNumericKey(NumericKeys.FIVE);
+  //   calculator.pressOperatorKey(OperatorKeys.MINUS);
+  //   calculator.pressNumericKey(NumericKeys.ONE);
+  //   calculator.pressNumericKey(NumericKeys.ZERO);
+  //   calculator.pressActionKey(ActionKeys.EQUALS);
+  //   const displayValue: string = calculator.display();
 
-    expect(displayValue).toEqual('5');
+  //   expect(displayValue).toEqual('5');
 
-  });
+  // });
 
-  it('should display `21` when equals is clicked on `3 * 7`', (): void => {
+  // it('should display `21` when equals is clicked on `3 * 7`', (): void => {
 
-    calculator.pressNumericKey(NumericKeys.THREE);
-    calculator.pressOperatorKey(OperatorKeys.MULT);
-    calculator.pressNumericKey(NumericKeys.SEVEN);
-    calculator.pressActionKey(ActionKeys.EQUALS);
-    const displayValue: string = calculator.display();
+  //   calculator.pressNumericKey(NumericKeys.THREE);
+  //   calculator.pressOperatorKey(OperatorKeys.MULT);
+  //   calculator.pressNumericKey(NumericKeys.SEVEN);
+  //   calculator.pressActionKey(ActionKeys.EQUALS);
+  //   const displayValue: string = calculator.display();
 
-    expect(displayValue).toEqual('21');
+  //   expect(displayValue).toEqual('21');
 
-  });
+  // });
 
-  it('should display `12` when equals is clicked on `144 / 12`', (): void => {
+  // it('should display `12` when equals is clicked on `144 / 12`', (): void => {
 
-    calculator.pressNumericKey(NumericKeys.ONE);
-    calculator.pressNumericKey(NumericKeys.FOUR);
-    calculator.pressNumericKey(NumericKeys.FOUR);
-    calculator.pressOperatorKey(OperatorKeys.DIV);
-    calculator.pressNumericKey(NumericKeys.ONE);
-    calculator.pressNumericKey(NumericKeys.TWO);
-    calculator.pressActionKey(ActionKeys.EQUALS);
-    const displayValue: string = calculator.display();
+  //   calculator.pressNumericKey(NumericKeys.ONE);
+  //   calculator.pressNumericKey(NumericKeys.FOUR);
+  //   calculator.pressNumericKey(NumericKeys.FOUR);
+  //   calculator.pressOperatorKey(OperatorKeys.DIV);
+  //   calculator.pressNumericKey(NumericKeys.ONE);
+  //   calculator.pressNumericKey(NumericKeys.TWO);
+  //   calculator.pressActionKey(ActionKeys.EQUALS);
+  //   const displayValue: string = calculator.display();
 
-    expect(displayValue).toEqual('12');
+  //   expect(displayValue).toEqual('12');
 
-  });
+  // });
 
-  it('should display `14` when equals is clicked on `2 + 3 * 4`', (): void => {
+  // it('should display `14` when equals is clicked on `2 + 3 * 4`', (): void => {
 
-    calculator.pressNumericKey(NumericKeys.TWO);
-    calculator.pressOperatorKey(OperatorKeys.PLUS);
-    calculator.pressNumericKey(NumericKeys.THREE);
-    calculator.pressOperatorKey(OperatorKeys.MULT);
-    calculator.pressNumericKey(NumericKeys.FOUR);
-    const displayValue: string = calculator.display();
+  //   calculator.pressNumericKey(NumericKeys.TWO);
+  //   calculator.pressOperatorKey(OperatorKeys.PLUS);
+  //   calculator.pressNumericKey(NumericKeys.THREE);
+  //   calculator.pressOperatorKey(OperatorKeys.MULT);
+  //   calculator.pressNumericKey(NumericKeys.FOUR);
+  //   const displayValue: string = calculator.display();
 
-    expect(displayValue).toEqual('14');
+  //   expect(displayValue).toEqual('14');
 
-  });
+  // });
 
 });

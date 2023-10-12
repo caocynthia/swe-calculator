@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">55.55% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/9</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">55.55% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/9</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -108,17 +108,7 @@
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -130,10 +120,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -142,10 +132,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -161,17 +147,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ICalculatorModel } from "../interfaces/calculator-model.interface";
 import { ICalculatorState } from "../interfaces/calculator.state.model";
@@ -179,16 +159,16 @@ import { CalculatorModel } from "./calculator.model";
 import { EnteringFirstOperand } from "./calculator.model.states.first";
 &nbsp;
 export class EnteringThirdOperand implements ICalculatorState {
-    private constructor(){}
+<span class="fstat-no" title="function not covered" >    pr</span>ivate constructor(){}
 &nbsp;
     private static theInstance: EnteringThirdOperand;
     private currentAns:number;
     
-    static instance(c: ICalculatorModel): ICalculatorState {
-        if (EnteringThirdOperand.theInstance === undefined) {
-            EnteringThirdOperand.theInstance = new EnteringThirdOperand();
+<span class="fstat-no" title="function not covered" >    st</span>atic instance(c: ICalculatorModel): ICalculatorState {
+<span class="cstat-no" title="statement not covered" >        if (EnteringThirdOperand.theInstance === undefined) {</span>
+<span class="cstat-no" title="statement not covered" >            EnteringThirdOperand.theInstance = new EnteringThirdOperand();</span>
         }
-        return EnteringThirdOperand.theInstance;
+<span class="cstat-no" title="statement not covered" >        return EnteringThirdOperand.theInstance;</span>
     }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    pu</span>blic enterNumber(c: ICalculatorModel): void {
@@ -199,8 +179,8 @@ export class EnteringThirdOperand implements ICalculatorState {
     //     c.changeState(EnteringFirstOperand.instance(c));
     // }
 &nbsp;
-    public getCurrentAns() : number {
-        return this.currentAns;
+<span class="fstat-no" title="function not covered" >    pu</span>blic getCurrentAns() : number {
+<span class="cstat-no" title="statement not covered" >        return this.currentAns;</span>
     }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    pu</span>blic enterPlus(c: CalculatorModel): void {
@@ -215,19 +195,9 @@ export class EnteringThirdOperand implements ICalculatorState {
 <span class="cstat-no" title="statement not covered" >        c.changeState(EnteringFirstOperand.instance(c));</span>
     }
 &nbsp;
-    public enterDiv(c: CalculatorModel): void {
-        c.changeState(EnteringFirstOperand.instance(c));
+<span class="fstat-no" title="function not covered" >    pu</span>blic enterDiv(c: CalculatorModel): void {
+<span class="cstat-no" title="statement not covered" >        c.changeState(EnteringFirstOperand.instance(c));</span>
     }
-&nbsp;
-    // public enteringFirstOperand(c: ICalculatorModel): void {
-    //     throw new Error("Method not implemented.");
-    // }
-    // public enteringSecondOperand(c: ICalculatorModel): void {
-    //     throw new Error("Method not implemented.");
-    // }
-    // public enteringThirdOperand(c: ICalculatorModel): void {
-    //     throw new Error("Method not implemented.");
-    // }
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -235,7 +205,7 @@ export class EnteringThirdOperand implements ICalculatorState {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-10-12T05:50:14.151Z
+                at 2023-10-12T15:57:42.132Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

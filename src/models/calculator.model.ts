@@ -12,12 +12,11 @@ export class CalculatorModel implements ICalculatorModel {
   private _buffer: string = '';
 
   //store first operand, second operand, etc.
-  public currentOperand:number = 0;
+  public _operands: Array<string> = [];
+
   public firstOperand:number = 0;
   public secondOperand:number = 0;
-  public thirdOperand:number = 0;
-  public currentAns:number = 0;
-  public finalAnswer:number = 0;
+  public firstOperator:string = '';
 
   public constructor() {
     this.state = EnteringFirstOperand.instance(this);
@@ -30,36 +29,60 @@ export class CalculatorModel implements ICalculatorModel {
   public changeState(state: ICalculatorState) : void {
     this.state = state;
     this.display();
-    this.currentAns = this.state.getCurrentAns();
   }
 
-  public enterPlus() : void {
-    this.state.enterPlus(this);
+  public getFirstOperand() : number {
+    return this.firstOperand;
   }
 
-  public enterMinus() : void {
-    this.state.enterMinus(this);
+  public getFirstOperator() : string {
+    return this.firstOperator;
   }
 
-  public enterMult() : void {
-    this.state.enterMult(this);
+  public getSecondOperand() : number {
+    return this.secondOperand;
   }
 
-  public enterDiv() : void {
-    this.state.enterDiv(this);
+  public setFirstOperand(num:number) : void {
+    this.firstOperand = num;
   }
+
+  public setFirstOperator(op:string) : void {
+    this.firstOperator = op;
+  }
+
+  public setSecondOperand(num:number) : void {
+    this.secondOperand = num;
+  }
+
+  // public enterPlus(key: OperatorKeys) : void {
+  //   this.state.enterPlus(this);
+  // }
+
+  // public enterMinus() : void {
+  //   this.state.enterMinus(this);
+  // }
+
+  // public enterMult() : void {
+  //   this.state.enterMult(this);
+  // }
+
+  // public enterDiv() : void {
+  //   this.state.enterDiv(this);
+  // }
 
   public pressNumericKey(key: NumericKeys): void {
     this._buffer += key;
-    this.currentOperand = Number(this._buffer);
   }
 
   public pressOperatorKey(key: OperatorKeys): void {
-    this._buffer += key;
+    this._operands.push(this._buffer);
+    this.firstOperand = parseFloat(this._operands.shift());
+    this._buffer = '';
+
     switch (key) {
       case OperatorKeys.PLUS:
         this.state.enterPlus(this);
-        console.log(this.firstOperand);
         break;
       case OperatorKeys.MINUS:
         this.state.enterMinus(this);
@@ -67,7 +90,7 @@ export class CalculatorModel implements ICalculatorModel {
       case OperatorKeys.MULT:
         this.state.enterMult(this);
       case OperatorKeys.DIV:
-        console.log(this.firstOperand);
+        console.log(this._operands);
         this.state.enterDiv(this);
       default:
         throw new Error('Invalid Action');
@@ -83,7 +106,7 @@ export class CalculatorModel implements ICalculatorModel {
         this._buffer += '.';
         break;
       case ActionKeys.EQUALS:
-        this._buffer = this.currentAns.toString();
+        this._buffer = this.state.getCurrentAns().toString();
       default:
         throw new Error('Invalid Action');
     }
