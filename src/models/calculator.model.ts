@@ -12,11 +12,11 @@ export class CalculatorModel implements ICalculatorModel {
   private _buffer: string = '';
 
   //store first operand, second operand, etc.
-  public firstOperand:string = "";
-  public secondOperand:string = "";
-  public thirdOperand:string = "";
-  public currentAns:string = "";
-  public finalAnswer:string = "";
+  public firstOperand:number = 0;
+  public secondOperand:number = 0;
+  public thirdOperand:number = 0;
+  public currentAns:number = 0;
+  public finalAnswer:number = 0;
 
   public constructor() {
     this.state = EnteringFirstOperand.instance(this);
